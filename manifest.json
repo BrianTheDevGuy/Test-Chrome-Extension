@@ -9,6 +9,9 @@
   },
   "background": {
     "service_worker": "background.js"
+  },
+  "actions": {
+    "default_title": "Open Chat Window"
   }
 
 }

@@ -1,0 +1,44 @@
+img {
+    image-rendering: pixelated;
+}
+body {
+    align-content: center;
+    width: fit-content;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+        "DialogueBox Cookie"
+        "Button Button";
+    grid-template-columns: 256px 256px;
+    gap: 8px
+    padding: 8px;
+}
+
+.container .DialogueBox {
+    grid-area: DialogueBox;
+}
+
+.container img {
+    grid-area: Cookie;
+    justify-self: end;
+    align-self: center;
+}
+
+.container .sectionInput {
+    grid-area: Button;
+    justify-self: center;
+    align-self: center;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.DialogueBox {
+    border: 1px solid black;
+    height: 128px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 11px 11px 0px 11px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}

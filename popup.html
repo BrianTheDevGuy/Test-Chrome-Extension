@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Extension</title>
-    <style>
-      body { font-family: sans-serif; padding: 10px; }
-      button { padding: 5px 10px; }
-    </style>
+    <title>Cookie Buddy</title>
+    <link rel="stylesheet" href="popup.css">
   </head>
   <body>
-    <h3>Hello!</h3>
-    <button id="clickMe">Click Me</button>
-    <script src="popup.js"></script>
+    <div id="myWindow" class="container">
+      <div class="section">
+          <div class="DialogueBox">
+            <h3>Cookie Buddy</h3>
+            <p id="dialogtext">Hi! I'm Cookie Buddy, your friendly assistant.</p>
+          </div>
+      </div>
+      <div class="section">
+        <img id="cookieImage" src="/public/Cookie Idle.gif" alt="Cookie" width="256" height="256">
+      </div>
+      <div class="sectionInput">
+        <p>Ask me anything!</p>
+        <input type="text" id="userInput" placeholder="Type your message here...">
+        <button id="clickMe" onsubmit="GenerateResponse()">Send</button>
+        <script src="popup.js"></script>
+        <p id="debug">test</p>
+      </div>
+    </div>
   </body>
 </html>
