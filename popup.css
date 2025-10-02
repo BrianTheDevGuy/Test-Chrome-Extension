@@ -11,7 +11,7 @@ body {
         "DialogueBox Cookie"
         "Button Button";
     grid-template-columns: 256px 256px;
-    gap: 8px
+    gap: 8px;
     padding: 8px;
 }
 
